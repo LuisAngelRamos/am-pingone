@@ -1,57 +1,32 @@
 [versions]
-activityCompose = "1.9.3"
-agp = "8.7.1"
-coreSplashscreen = "1.0.1"
-datastore = "1.0.0" # DataStorageTest failed when using 1.1.1 https://issuetracker.google.com/issues/337870543
-davinci = "1.3.0-beta1"
-davinci-android = "1.3.0-beta1"
-davinci-storage = "1.3.0-beta1"
-davinci-externalIdp = "1.3.0-beta1"
-davinci-oidc = "1.3.0-beta1"
-kotlin = "2.0.0"
-compose = "1.7.4"
-compose-material3 = "1.3.0"
-coreKtx = "1.13.1"
-appcompat = "1.7.0"
-material = "1.12.0"
-materialIconsExtended = "1.7.4"
-navVersion = "2.8.3"
-composeBom = "2024.10.00"
-coilCompose = "2.4.0"
-coilSvg = "2.4.0"
-androidx-credentials = "1.5.0"
-googleid = "1.1.1"
-facebook-login = "18.0.3"
+agp = "8.13.0"
+kotlin = "2.0.21"
+coreKtx = "1.17.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+lifecycleRuntimeKtx = "2.9.4"
+activityCompose = "1.11.0"
+composeBom = "2024.09.00"
 
 [libraries]
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
-androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
-androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
-androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
-androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navVersion" }
-androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-davinci = { module = "com.pingidentity.sdks:android", version.ref = "davinci" }
-foundation-android = { module = "com.pingidentity.sdks:davinci", version.ref = "davinci-android" }
-foundation-oidc = { module = "com.pingidentity.sdks:oidc", version.ref = "davinci-oidc" }
-foundation-oidc-browser = { module = "com.pingidentity.sdks:browser", version.ref = "davinci-oidc" }
-foundation-storage = { module = "com.pingidentity.sdks:davinci", version.ref = "davinci-storage" }
-external-idp = { module = "com.pingidentity.sdks:external-idp", version.ref = "davinci-externalIdp" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
-coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coilSvg" }
-androidx-credentials = { group = "androidx.credentials", name = "credentials", version.ref = "androidx-credentials" }
-androidx-credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "androidx-credentials" }
-googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
-facebook-login = { module = "com.facebook.android:facebook-login", version.ref = "facebook-login" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 
 [plugins]
-androidApplication = { id = "com.android.application", version.ref = "agp" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
